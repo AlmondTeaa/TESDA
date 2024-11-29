@@ -1,2 +1,2 @@
 # TESDA
-A sample of the website I submitted when I took creative web design of  TESDA
+A sample website I submitted when I took the Creative Web Design of TESDA
