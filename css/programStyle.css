@@ -1,15 +1,18 @@
-html,body {
-    height: 90%;
+html {
+    height: 100%;
     width: 100%;
     margin: 0;
-    padding-top: 10px;
+}   
+body {
+    height: auto;
 }
-
 div.programStart{
+    padding-top: 10px;
     display: flex;
     align-items: center;
     padding-right: 10%;
     padding-left: 10%;
+    
 }
 
 span.title {
@@ -17,6 +20,7 @@ span.title {
     font-weight: bold;
     color: black;
     margin-right: 10px;
+    
 }
 
 div.line {
@@ -31,6 +35,9 @@ section.boxes {
     justify-content: center;
     gap: 20px;
     flex-wrap: wrap;
+    height: auto;
+    padding-left: 10%;
+    padding-right: 10%;
 }
 
 div.box {
@@ -77,6 +84,7 @@ div.box:hover h1 {
 
 div.box::after {
     content:attr(data-content);
+    text-align: justify;
     position: absolute;
     top: 60%;  /* Adjust this to position your text */
     left: 5%;
@@ -85,6 +93,7 @@ div.box::after {
     z-index: 2;  /* Ensure it's above the image */
     opacity: 0;  /* Start as invisible */
     transition: opacity 0.5s ease-in-out;
+    padding-right: 10px;
 }
 
 div.box:hover::after {
